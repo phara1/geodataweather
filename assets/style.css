@@ -1,0 +1,224 @@
+body {
+    background-color: #333;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h1 {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 25px;
+}
+
+.notfound {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    font-size: 400px;
+    transition: transform 0.3s;
+}
+
+.notfound:hover {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+    }
+    70% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.95);
+    }
+}
+
+.gametitle {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    font-size: 100px;
+    transition: transform 0.3s;
+}
+
+.gameplay {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    font-size: 20px;
+    transition: transform 0.3s;
+    color: rgb(122, 18, 18);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 15%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(39, 13, 13, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter {
+    display: inline;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 100px;
+    transition: transform 0.3s;
+    color: rgb(122, 18, 18);
+}
+
+.centered {
+    text-align: center;
+}
+
+select {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.design {
+    bottom: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    color: white;
+}
+
+#city {
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    width: 200px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#map {
+    height: 400px;
+    width: 800px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding-left: 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+li::before {
+    content: "";
+    color: cyan;
+    font-size: 26px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.json-box,
+.data-box {
+    background-color: #333;
+    color: cyan;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #7fa7d2;
+    font-family: monospace;
+    word-wrap: break-word;
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 48%;
+    min-height: 600px;
+}
+
+#NextWeek ul {
+    padding-left: 20px;
+}
+
+button {
+    background: linear-gradient(to right, #038fe0, #00B5B5);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #02588a, #00B5B5);
+}
+
+.mapDesign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.mapContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}

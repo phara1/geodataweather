@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://127.0.0.1:8080/style.css">
+    </head>
+    <style>
+
+    </style>
+    <body>
+
+        <h1>this is the index page</h1>
+        <h1>we dont rlly care about this page do we?</h1>
+        <h1><p id="thedots"></p></h1>
+        <h1>go to <a style="color: cyan" href="http://127.0.0.1:8080/spammer">spammer</a></h1>
+        <h1>go to <a style="color: cyan" href="http://127.0.0.1:8080/weathermap">weathermap</a></h1>
+        <script>
+            var i = 0;
+            var txt = '...';
+            var speed = 600;
+          
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("thedots").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            }
+          
+            typeWriter();
+          </script>
+    </body>
+</html>

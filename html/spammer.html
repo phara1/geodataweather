@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://127.0.0.1:8080/style.css">
+</head>
+
+
+<body>
+    <h1 class="gametitle">SMASH THE MOUSY</h1>
+    <center><img src="https://th.bing.com/th/id/OIP.Jv5PHHCJVtTDs-UHvtkVvQHaEK?rs=1&pid=ImgDetMain"></center>
+    <div class="centered">
+        <h2 class="counter" id="leftClicks">0</h2>
+        <h2 class="counter" id="rightClicks">0</h2>
+        <div class="overlay" onclick="countLeftClicks(); btnMover()" oncontextmenu="countRightClicks(); btnMover()">
+            <button id="rapeBtn" class="gameplay">PRESS ME!!!</button>
+        </div>
+
+        <h2 id="pasteText" style="color: #ffffff;"></h2>
+    </div>
+
+    <script src="http://127.0.0.1:8080/spammer.js"></script>
+
+
+</body>
+
+</html>
